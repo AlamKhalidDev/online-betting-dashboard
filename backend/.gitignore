@@ -1,0 +1,75 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+.nyc_output/
+
+# Docker
+docker-compose.override.yml
+*.dockerignore
+
+# Database
+*-data/
+docker-volume/
+
+# Prisma
+/prisma/migrations/
+/generated/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temp files
+tmp/
+.temp/
+
+# Optional
+.sass-cache/
+*.css.map
+*.js.map
+
+# Local development
+*.local
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Visual Studio Code
+.history/
+*.code-workspace
+
+# Prisma binaries (platform-specific)
+/node_modules/.prisma/client/libquery_engine-*
