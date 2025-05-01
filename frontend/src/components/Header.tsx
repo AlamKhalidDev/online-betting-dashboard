@@ -22,12 +22,13 @@ const Header = ({ searchQuery, onSearchChange }: HeaderProps) => (
       position: "sticky",
       top: 0,
       zIndex: 10,
+      width: "100%",
     }}
   >
     <Box
       sx={{
         py: 2,
-        px: 4,
+        px: { xs: 2, sm: 4 },
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
@@ -49,7 +50,10 @@ const Header = ({ searchQuery, onSearchChange }: HeaderProps) => (
             B
           </Typography>
         </Box>
-        <Typography variant="h6" sx={{ fontWeight: 700 }}>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: 700, display: { xs: "none", md: "block" } }}
+        >
           Betting Dashboard
         </Typography>
       </Box>
@@ -72,7 +76,7 @@ const Header = ({ searchQuery, onSearchChange }: HeaderProps) => (
 
       <Typography
         variant="body2"
-        sx={{ width: 100, textAlign: "center" }}
+        sx={{ width: { xs: 100, sm: 200 }, textAlign: "center" }}
       ></Typography>
     </Box>
   </Paper>

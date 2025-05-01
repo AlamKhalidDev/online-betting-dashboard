@@ -45,20 +45,29 @@ const BettingDashboard = () => {
     <Box sx={{ minHeight: "100vh", bgcolor: "#f8fafc" }}>
       <Header searchQuery={searchQuery} onSearchChange={setSearchQuery} />
 
-      <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Container
+        maxWidth="lg"
+        sx={{ py: 4, width: "100%", overflow: "hidden" }}
+      >
         <Typography variant="h4" sx={{ mb: 3, fontWeight: 700 }}>
           Available Events
         </Typography>
 
         {/* Tabs bar */}
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Paper sx={{ bgcolor: "background.paper", borderRadius: 1 }}>
+        <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
+          <Paper
+            sx={{
+              bgcolor: "background.paper",
+              borderRadius: 1,
+              maxWidth: { xs: "100%", sm: "fit-content" },
+            }}
+          >
             <Tabs
               value={tabValue}
               onChange={(_e, newValue) => setTabValue(newValue)}
               variant="scrollable"
               scrollButtons="auto"
-              sx={{ py: 1, px: 1 }}
+              sx={{ py: 1, px: 1, width: "100%" }}
             >
               <Tab label="All Events" />
               {uniqueSports.map((sport) => (
