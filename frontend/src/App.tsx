@@ -1,10 +1,11 @@
+import BettingDashboard from "./components/BettingDashboard";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-    </>
-  )
-}
+    <main>
+      <BettingDashboard />
+    </main>
+  );
+};
 
-export default App
+export default App;
