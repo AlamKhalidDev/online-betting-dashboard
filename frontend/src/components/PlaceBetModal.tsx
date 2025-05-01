@@ -55,11 +55,7 @@ const PlaceBetModal = ({ event, isOpen, onClose }: PlaceBetModalProps) => {
     }, 1000);
   };
 
-  const handleSliderChange = (
-    event: Event,
-    value: number | number[],
-    activeThumb: number
-  ) => {
+  const handleSliderChange = (_: Event, value: number | number[]) => {
     setAmount((value as number).toString());
     setError("");
   };
